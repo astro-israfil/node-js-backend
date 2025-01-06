@@ -1,0 +1,25 @@
+### Testing Website endpoints / (homepage)
+GET http://localhost:8383
+
+### Testing Website endpoints /dashboard route
+GET http://localhost:8383/dashboard
+
+
+### Data endpoints
+GET http://localhost:8383/api/data
+
+### Create a new user by sending info. of an user to the server
+POST http://localhost:8383/api/data
+Content-Type: application/json
+
+{
+    "name": "Dianna"
+}
+
+### Delete user
+DELETE http://localhost:8383/api/data
+Content-Type: application/json
+
+{
+    "name": "Israfil"
+}
